@@ -177,7 +177,7 @@ Login, create the Python virtual environment `. /usr/lib/ckan/default/bin/activa
 
 In your host operating system open a web browser and surf to localhost:8080. Congratulations, CKAN is up and running!
 
-In order to stop CKAN press `CTRL-ALT-g`,  `CTRL-c`,  `CTRL-ALT-g`. The key sequence `CTRL-ALT-g` will signal the QEMU virtual machine to pass through `special` key sequences like `CTRL-c` to stop the CKAN server is one. QEMUs menu bar will tell you wheather your virtual machine is capturing special key-codes (default) or if they are passed through the running process.
+In order to stop CKAN press `CTRL-ALT-g`,  `CTRL-c`,  `CTRL-ALT-g`. The key sequence `CTRL-ALT-g` signals the QEMU virtual machine to pass through `special` key sequences.`CTRL-c` is such a special key sequence and will stop the CKAN server. The QEMU menu bar will tell you wheather your virtual machine is capturing special key-codes (default) or if they are passed through the running process.
 
 ## Next steps
 

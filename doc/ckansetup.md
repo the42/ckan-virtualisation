@@ -75,9 +75,13 @@ Continuing here assumes that you have a virtual image runing a linux environemnt
 7. Setting up solr
 
 	[Solr](http://lucene.apache.org/solr/) is a very powerful search engine powered by JAVA. After a fresh install it is not running as a service by default and requires some hand-tailoring. Edit the file `/etc/default/jetty` eg. using
-    	vim /etc/default/jetty
+    	sudo vim /etc/default/jetty
     and change the lines containing `NO_START`, `JETTY_HOST` and `JETTY_PORT` to look like this:
     	NO_START=0
 		JETTY_HOST=127.0.0.1
 		JETTY_PORT=8983
-    Remember to press `i` before you can make changes to the content and to press `ESC` followed by `:wq` + `Enter` to get out of the vim editor.
+    Remember to press `i` before you can make changes to the content and to press `ESC` followed by `:wq` + `Enter` to get out of the vim editor. Afterwards start the jetty server by issuing
+    	sudo service jetty start
+    at the command prompt.
+
+DESCRIBE HERE SETTING UP NAT/BEIDGING required because of virtualisation.

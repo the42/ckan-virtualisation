@@ -47,3 +47,13 @@ Provide your credentials at the login prompt (the username and password you prov
 This will update the packages to the latest stable versions, fixing possible security fixes of software packages since your Ubuntu server image file has been provided.
     
 Your done!
+
+## Concluding remarks
+# Installing a virtual environemnt under Windows
+QEMU on Windows is under development. Another great alternative is [Virtualbox](https://www.virtualbox.org/). If you plan to use Virtualbox on Windows 8.1 64 bit hosting a 64bit OS as guest, you have to disable (the per default activated) Hyper-V. Either
+- Disable all entries mentioning Hyper-V in "Turn Windows Features on or off" or
+- open an elevated command prompt windows and enter
+
+		bcdedit /set hypervisorlaunchtype off
+    
+In either case you have to reboot Windows so changes can take effect. Afterwards Virtualbox will offer you to host a 64bit guest OS.

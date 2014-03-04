@@ -1,3 +1,5 @@
+This document has been adapted from http://docs.ckan.org/en/latest/maintaining/installing/install-from-source.html
+
 # Setup CKAN from source in a virtual environment
 Continuing here assumes that you have a virtual image running a Linux environement (the preferred OS to host CKAN) into which you will setup CKAN from source. Any virtualisation environment will do, but this tutorial makes most sense if you have an environment as described in [serversetup.md](./serversetup.md)
 
@@ -182,6 +184,7 @@ In order to stop CKAN press `CTRL-ALT-g`,  `CTRL-c`,  `CTRL-ALT-g`. The key sequ
 ## Next steps
 
 * Manage your newly created CKAN instance: TODO: Mention here what to do
-* Install the datastore extensions http://docs.ckan.org/en/latest/maintaining/datastore.html
+* Install the datastore extension http://docs.ckan.org/en/latest/maintaining/datastore.html. When you hit the section on installing the DataPusher service, continue with
+* Install the [DataPusher](./datapushersetup.md) service
 * Server CKAN using a full-featured web server. Think about scaling, load-balancing and fail-over.
 * Tune your PostgresSQL server. Postgres comes by default with very defensive performance settings. You should definitely tweak them as described here https://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server or for an overview https://wiki.postgresql.org/wiki/Performance_Optimization.

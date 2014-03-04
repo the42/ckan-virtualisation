@@ -181,10 +181,10 @@ In your host operating system open a web browser and surf to localhost:8080. Con
 
 In order to stop CKAN press `CTRL-ALT-g`,  `CTRL-c`,  `CTRL-ALT-g`. The key sequence `CTRL-ALT-g` signals the QEMU virtual machine to pass through `special` key sequences.`CTRL-c` is such a special key sequence and will stop the CKAN server. The QEMU menu bar will tell you wheather your virtual machine is capturing special key-codes (default) or if they are passed through the running process.
 
-## Next steps
+## Where to go from here
 
 * Manage your newly created CKAN instance: TODO: Mention here what to do
-* Install the datastore extension http://docs.ckan.org/en/latest/maintaining/datastore.html. When you hit the section on installing the DataPusher service, continue with
+* Install the datastore extension by enabling the plugin in `/etc/ckan/default/development.ini`and continue as described here: http://docs.ckan.org/en/latest/maintaining/datastore.html. When you hit the section on installing the DataPusher service, continue with
 * Install the [DataPusher](./datapushersetup.md) service
-* Server CKAN using a full-featured web server. Think about scaling, load-balancing and fail-over.
-* Tune your PostgresSQL server. Postgres comes by default with very defensive performance settings. You should definitely tweak them as described here https://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server or for an overview https://wiki.postgresql.org/wiki/Performance_Optimization.
+* Serve CKAN using a full-featured web server. [Apache](http://httpd.apache.org/) or [nginx](http://nginx.org/) make a great web server. Think about caching (eg. [Varnish](https://www.varnish-cache.org/), load-balancing and fail-over.
+* Tune your PostgresSQL server. Postgres comes by default with very defensive performance settings. You should definitely tweak them as described here https://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server or for a more general overview https://wiki.postgresql.org/wiki/Performance_Optimization.

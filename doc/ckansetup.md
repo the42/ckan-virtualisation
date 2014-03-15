@@ -170,9 +170,9 @@ In the next step we will start CKAN which listens by default on port 5000. Once 
     
 and restart it with this command line
 
-	qemu-system-x86_64 -machine accel=kvm -net nic -net user,hostfwd=tcp:127.0.0.1:8080-:5000 ckan2.2.ovl
+	qemu-system-x86_64 -machine accel=kvm -net nic -net user,hostfwd=tcp:127.0.0.1:8080-:5000 -m 1G -smp2 ckan2.2.ovl
     
-Login, create the Python virtual environment `. /usr/lib/ckan/default/bin/activate` and start CKAN
+(This will assign 1GB of memory and two CPUs to the virtual machine.) Login, create the Python virtual environment with `. /usr/lib/ckan/default/bin/activate` and start CKAN
 
 	cd /usr/lib/ckan/default/src/ckan
 	paster serve /etc/ckan/default/development.ini

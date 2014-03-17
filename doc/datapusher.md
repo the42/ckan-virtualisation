@@ -33,6 +33,6 @@ by running
 
 	python wsgi.py
     
-If you logged out and come back at a later time, you have to enable the Python virtual environment with `. /usr/lib/ckan/datapusher/bin/activate` before you start the datapusher service.
+If you logged out and come back at a later time, you have to enable the Python virtual environment with `. /usr/lib/ckan/datapusher/bin/activate` before you cd into `/usr/lib/ckan/datapusher/src/datapusher` and start the datapusher service.
 
 Also note that starting the CKAN server will NOT automatically start the datapusher - you have to start it when you plan to use that plugin from within CKAN.

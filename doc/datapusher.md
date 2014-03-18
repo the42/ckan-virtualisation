@@ -31,8 +31,8 @@ Open your `/etc/ckan/default/development.ini`-file and find the line `ckan.plugi
 # Start the datapusher
 by running
 
-	python wsgi.py
+	JOB_CONFIG=/usr/lib/ckan/datapusher/src/datapusher/deployment/datapusher_settings.py python wsgi.py
     
-If you logged out and come back at a later time, you have to enable the Python virtual environment with `. /usr/lib/ckan/datapusher/bin/activate` before you cd into `/usr/lib/ckan/datapusher/src/datapusher` and start the datapusher service.
+(2014-03-18: Setting the environment variable may be irrelevant at a later time; it is a bug that it get's not set automatically by the `pip setup`). If you logged out and come back at a later time, you have to enable the Python virtual environment with `. /usr/lib/ckan/datapusher/bin/activate` before you cd into `/usr/lib/ckan/datapusher/src/datapusher` and start the datapusher service.
 
 Also note that starting the CKAN server will NOT automatically start the datapusher - you have to start it when you plan to use that plugin from within CKAN.
